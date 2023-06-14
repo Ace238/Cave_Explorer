@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://bcudx3f63hadc"]
+
+[ext_resource type="Texture2D" uid="uid://cjaywdrhsh1tc" path="res://Art/Rectangle_example.png" id="1_ijt4h"]
+[ext_resource type="Script" path="res://temp_player.gd" id="1_v3qcf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v1ro8"]
+size = Vector2(36, 102)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a43l2"]
+size = Vector2(68, 102)
+
+[node name="Temp_Player" type="CharacterBody2D"]
+script = ExtResource("1_v3qcf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.0285479, 0.04375)
+texture = ExtResource("1_ijt4h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_v1ro8")
+
+[node name="Interaction Components" type="Node2D" parent="."]
+z_index = 1
+
+[node name="Interation Area" type="Area2D" parent="Interaction Components"]
+collision_layer = 0
+collision_mask = 2
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Interaction Components/Interation Area"]
+position = Vector2(16, 0)
+shape = SubResource("RectangleShape2D_a43l2")
+
+[node name="Interact Label" type="Label" parent="Interaction Components"]
+offset_left = -52.0
+offset_top = -82.0
+offset_right = 54.0
+offset_bottom = -56.0
+text = "Test"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="area_entered" from="Interaction Components/Interation Area" to="." method="_on_interation_area_area_entered"]
+[connection signal="area_exited" from="Interaction Components/Interation Area" to="." method="_on_interation_area_area_exited"]
