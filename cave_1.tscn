@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bjgqjak3pd4y8"]
+[gd_scene load_steps=16 format=3 uid="uid://bjgqjak3pd4y8"]
 
 [ext_resource type="Texture2D" uid="uid://cx0qps2tliy51" path="res://Art/BL_cave_tiles/ground_tile01.png" id="1_idqqu"]
 [ext_resource type="Texture2D" uid="uid://b73mmmoi0libe" path="res://Art/BL_cave_tiles/ground_right.png" id="2_mca0f"]
@@ -8,7 +8,6 @@
 [ext_resource type="Texture2D" uid="uid://bwwrihkf6a48e" path="res://Art/BL_cave_tiles/cave_back.png" id="5_kw8g6"]
 [ext_resource type="PackedScene" uid="uid://de5t6lu8f2lwp" path="res://Interact.tscn" id="6_12btl"]
 [ext_resource type="Texture2D" uid="uid://d33xtgopuswv3" path="res://Art/BL_cave_tiles/ground_gems02.png" id="6_ugao2"]
-[ext_resource type="Texture2D" uid="uid://nablwfdrnpsj" path="res://Art/Generic_sign.png" id="7_7p7ni"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lkxi3"]
 texture = ExtResource("1_idqqu")
@@ -83,11 +82,3 @@ scale = Vector2(0.419, 0.419)
 interact_label = "Press E to mine"
 interact_type = "print_text"
 interact_value = "If only we could craft..."
-
-[node name="Interacter" parent="Interacter" instance=ExtResource("6_12btl")]
-position = Vector2(-589.499, 14.3198)
-
-[node name="GenericSign" type="Sprite2D" parent="."]
-position = Vector2(-181, 571)
-scale = Vector2(1.625, 1.4375)
-texture = ExtResource("7_7p7ni")
