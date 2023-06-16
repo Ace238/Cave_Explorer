@@ -1,12 +1,12 @@
-[gd_scene load_steps=16 format=3 uid="uid://bjgqjak3pd4y8"]
+[gd_scene load_steps=16 format=3 uid="uid://cylolo6el3ge3"]
 
 [ext_resource type="Texture2D" uid="uid://cx0qps2tliy51" path="res://Art/BL_cave_tiles/ground_tile01.png" id="1_idqqu"]
 [ext_resource type="Texture2D" uid="uid://b73mmmoi0libe" path="res://Art/BL_cave_tiles/ground_right.png" id="2_mca0f"]
 [ext_resource type="Texture2D" uid="uid://bkuituifjgqj2" path="res://Art/BL_cave_tiles/ground_down.png" id="3_3rfr2"]
 [ext_resource type="Texture2D" uid="uid://bq3je1kpootyv" path="res://Art/BL_cave_tiles/ground_left.png" id="4_gpo3i"]
-[ext_resource type="PackedScene" uid="uid://bcudx3f63hadc" path="res://temp_player.tscn" id="5_ixmj4"]
+[ext_resource type="PackedScene" path="res://temp_player.tscn" id="5_ixmj4"]
 [ext_resource type="Texture2D" uid="uid://bwwrihkf6a48e" path="res://Art/BL_cave_tiles/cave_back.png" id="5_kw8g6"]
-[ext_resource type="PackedScene" uid="uid://de5t6lu8f2lwp" path="res://Interact.tscn" id="6_12btl"]
+[ext_resource type="PackedScene" path="res://Interact.tscn" id="6_12btl"]
 [ext_resource type="Texture2D" uid="uid://d33xtgopuswv3" path="res://Art/BL_cave_tiles/ground_gems02.png" id="6_ugao2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lkxi3"]
