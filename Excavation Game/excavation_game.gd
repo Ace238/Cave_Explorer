@@ -24,6 +24,10 @@ func _unhandled_input(event):
 			clicked_cell_depth = max(0, clicked_cell_depth - 1)
 			
 			tile_map.set_cell(0, clicked_cell_position, 0, Vector2i(clicked_cell_depth, 0), 0)	
+			
+			if clicked_cell_depth == 0:
+				tile_map.set_cell(0, clicked_cell_position)	
+			
 		else:
 			return 0
 		
