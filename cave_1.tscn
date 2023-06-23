@@ -1,14 +1,14 @@
-[gd_scene load_steps=17 format=3 uid="uid://cylolo6el3ge3"]
+[gd_scene load_steps=17 format=3 uid="uid://c0k0l4trlrcgj"]
 
-[ext_resource type="Script" path="res://cave_1.gd" id="1_fc657"]
+[ext_resource type="Script" path="res://cave_1.gd" id="1_dk02k"]
 [ext_resource type="Texture2D" uid="uid://cx0qps2tliy51" path="res://Art/BL_cave_tiles/ground_tile01.png" id="1_idqqu"]
 [ext_resource type="Texture2D" uid="uid://b73mmmoi0libe" path="res://Art/BL_cave_tiles/ground_right.png" id="2_mca0f"]
 [ext_resource type="Texture2D" uid="uid://bkuituifjgqj2" path="res://Art/BL_cave_tiles/ground_down.png" id="3_3rfr2"]
 [ext_resource type="Texture2D" uid="uid://bq3je1kpootyv" path="res://Art/BL_cave_tiles/ground_left.png" id="4_gpo3i"]
-[ext_resource type="PackedScene" uid="uid://bcudx3f63hadc" path="res://temp_player.tscn" id="5_ixmj4"]
 [ext_resource type="Texture2D" uid="uid://bwwrihkf6a48e" path="res://Art/BL_cave_tiles/cave_back.png" id="5_kw8g6"]
-[ext_resource type="PackedScene" uid="uid://de5t6lu8f2lwp" path="res://Interact.tscn" id="6_12btl"]
 [ext_resource type="Texture2D" uid="uid://d33xtgopuswv3" path="res://Art/BL_cave_tiles/ground_gems02.png" id="6_ugao2"]
+[ext_resource type="PackedScene" uid="uid://bcudx3f63hadc" path="res://temp_player.tscn" id="8_i5fmh"]
+[ext_resource type="PackedScene" uid="uid://de5t6lu8f2lwp" path="res://Interact.tscn" id="9_65c1a"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lkxi3"]
 texture = ExtResource("1_idqqu")
@@ -70,7 +70,7 @@ sources/5 = SubResource("TileSetAtlasSource_tiu4k")
 sources/7 = SubResource("TileSetAtlasSource_1dnhh")
 
 [node name="Cave_1" type="Node2D"]
-script = ExtResource("1_fc657")
+script = ExtResource("1_dk02k")
 
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_6mo4b")
@@ -83,22 +83,13 @@ layer_1/modulate = Color(1, 1, 1, 1)
 layer_1/y_sort_enabled = false
 layer_1/y_sort_origin = 0
 layer_1/z_index = 0
-layer_1/tile_data = PackedInt32Array(262175, 2, 0, 327711, 2, 0, 393247, 2, 0, 458783, 2, 0, 524319, 7, 0, 589855, 2, 0, 655391, 2, 0, 720927, 2, 0, 720902, 3, 0, 720903, 3, 0, 720904, 3, 0, 720905, 3, 0, 720906, 3, 0, 720907, 3, 0, 720908, 3, 0, 720909, 3, 0, 720910, 3, 0, 720911, 3, 0, 720912, 3, 0, 720913, 3, 0, 720914, 3, 0, 720915, 3, 0, 720916, 3, 0, 720917, 3, 0, 720918, 3, 0, 720919, 3, 0, 720920, 3, 0, 720921, 3, 0, 720922, 3, 0, 720923, 3, 0, 720924, 3, 0, 720925, 3, 0, 720926, 3, 0, 262148, 4, 0, 327684, 4, 0, 393220, 4, 0, 458756, 4, 0, 524292, 4, 0, 589828, 4, 0, 655364, 4, 0, 720900, 4, 0, 720901, 3, 0, 655365, 1, 0, 655366, 1, 0, 655367, 1, 0, 655368, 1, 0, 655369, 1, 0, 655370, 1, 0, 655371, 1, 0, 655372, 1, 0, 655373, 1, 0, 655374, 1, 0, 655375, 1, 0, 655376, 1, 0, 655377, 1, 0, 655378, 1, 0, 655379, 1, 0, 655380, 1, 0, 655381, 1, 0, 655382, 1, 0, 655383, 1, 0, 655384, 1, 0, 655385, 1, 0, 655386, 1, 0, 655387, 1, 0, 655388, 1, 0, 655389, 1, 0, 655390, 1, 0)
-layer_2/name = "Mined"
-layer_2/enabled = true
-layer_2/modulate = Color(1, 1, 1, 1)
-layer_2/y_sort_enabled = false
-layer_2/y_sort_origin = 0
-layer_2/z_index = 0
-layer_2/tile_data = PackedInt32Array()
+layer_1/tile_data = PackedInt32Array(262175, 2, 0, 327711, 2, 0, 393247, 7, 0, 458783, 7, 0, 524319, 7, 0, 589855, 2, 0, 655391, 2, 0, 720927, 2, 0, 720902, 3, 0, 720903, 3, 0, 720904, 3, 0, 720905, 3, 0, 720906, 3, 0, 720907, 3, 0, 720908, 3, 0, 720909, 3, 0, 720910, 3, 0, 720911, 3, 0, 720912, 3, 0, 720913, 3, 0, 720914, 3, 0, 720915, 3, 0, 720916, 3, 0, 720917, 3, 0, 720918, 3, 0, 720919, 3, 0, 720920, 3, 0, 720921, 3, 0, 720922, 3, 0, 720923, 3, 0, 720924, 3, 0, 720925, 3, 0, 720926, 3, 0, 262148, 4, 0, 327684, 4, 0, 393220, 4, 0, 458756, 4, 0, 524292, 4, 0, 589828, 4, 0, 655364, 4, 0, 720900, 4, 0, 720901, 3, 0, 655365, 1, 0, 655366, 1, 0, 655367, 1, 0, 655368, 1, 0, 655369, 1, 0, 655370, 1, 0, 655371, 1, 0, 655372, 1, 0, 655373, 1, 0, 655374, 1, 0, 655375, 1, 0, 655376, 1, 0, 655377, 1, 0, 655378, 1, 0, 655379, 1, 0, 655380, 1, 0, 655381, 1, 0, 655382, 1, 0, 655383, 1, 0, 655384, 1, 0, 655385, 1, 0, 655386, 1, 0, 655387, 1, 0, 655388, 1, 0, 655389, 1, 0, 655390, 1, 0)
 
-[node name="Temp_Player" parent="." instance=ExtResource("5_ixmj4")]
-position = Vector2(184, 202)
-scale = Vector2(0.7, 0.7)
+[node name="Temp_Player" parent="." instance=ExtResource("8_i5fmh")]
+position = Vector2(196, 204)
+scale = Vector2(0.684, 0.684)
 
-[node name="Interacter" parent="." instance=ExtResource("6_12btl")]
-position = Vector2(756, 204)
-scale = Vector2(0.419, 0.419)
+[node name="Interacter" parent="." instance=ExtResource("9_65c1a")]
+position = Vector2(755, 204)
+scale = Vector2(0.465, 0.465)
 interact_label = "Press E to mine"
-interact_type = "2222"
-interact_value = "3333"
