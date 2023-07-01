@@ -1,20 +1,20 @@
 [gd_scene load_steps=5 format=3 uid="uid://bcudx3f63hadc"]
 
-[ext_resource type="Texture2D" uid="uid://cjaywdrhsh1tc" path="res://Art/Rectangle_example.png" id="1_ijt4h"]
 [ext_resource type="Script" path="res://temp_player.gd" id="1_v3qcf"]
+[ext_resource type="Texture2D" uid="uid://cteyru01axoy7" path="res://Art/smiley_sprite.png" id="2_72lqo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v1ro8"]
-size = Vector2(36, 102)
+size = Vector2(36, 34)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_a43l2"]
-size = Vector2(68, 102)
+size = Vector2(58, 62)
 
 [node name="Temp_Player" type="CharacterBody2D"]
 script = ExtResource("1_v3qcf")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.0285479, 0.04375)
-texture = ExtResource("1_ijt4h")
+scale = Vector2(2.375, 2.25)
+texture = ExtResource("2_72lqo")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_v1ro8")
@@ -28,14 +28,14 @@ collision_mask = 2
 monitorable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Interaction Components/Interation Area"]
-position = Vector2(16, 0)
+scale = Vector2(1.291, 1.291)
 shape = SubResource("RectangleShape2D_a43l2")
 
 [node name="Interact Label" type="Label" parent="Interaction Components"]
-offset_left = -52.0
-offset_top = -82.0
-offset_right = 54.0
-offset_bottom = -56.0
+offset_left = -53.0
+offset_top = -61.0
+offset_right = 53.0
+offset_bottom = -35.0
 text = "Test"
 horizontal_alignment = 1
 vertical_alignment = 1
