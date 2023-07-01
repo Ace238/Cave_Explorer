@@ -11,8 +11,6 @@ var foreground_layer : int = 1
 
 var can_be_mined_custom_layer : String = "Can_be_mined"
 
-#var Test_Scene = preload("res://Test_Scene.tscn").instantiate()
-
 func _ready():
 	pass
 
@@ -62,7 +60,7 @@ func _input(event):
 					tile_map.set_cell(foreground_layer, i, sourceID, atlas)
 					mined = 1
 					print("Yay, you mined something!!!!")
-#					get_tree().change_scene_to_file("res://Test_Scene.tscn")
+					get_tree().change_scene_to_file("res://Test_Scene/Test_Scene.tscn")
 					return
 				else:
 					if mined == 1:

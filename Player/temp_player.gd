@@ -25,14 +25,15 @@ func get_input_axis():
 	return axis.normalized()
 
 func move(delta):
-	
 	axis = get_input_axis()
 	
 	if axis == Vector2.ZERO:
-		apply_friction(FRICTION * delta)
+#		apply_friction(FRICTION * delta)
+		pass
 		
 	else:
 		apply_movement(axis * ACCELERATION * delta)
+#		pass
 		
 	move_and_slide()
 

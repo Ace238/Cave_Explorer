@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bcudx3f63hadc"]
 
-[ext_resource type="Script" path="res://temp_player.gd" id="1_v3qcf"]
-[ext_resource type="Texture2D" uid="uid://cteyru01axoy7" path="res://Art/smiley_sprite.png" id="2_72lqo"]
+[ext_resource type="Script" path="res://Player/temp_player.gd" id="1_hfmly"]
+[ext_resource type="Texture2D" uid="uid://cteyru01axoy7" path="res://Art/smiley_sprite.png" id="2_327k3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v1ro8"]
 size = Vector2(36, 34)
@@ -10,11 +10,11 @@ size = Vector2(36, 34)
 size = Vector2(58, 62)
 
 [node name="Temp_Player" type="CharacterBody2D"]
-script = ExtResource("1_v3qcf")
+script = ExtResource("1_hfmly")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(2.375, 2.25)
-texture = ExtResource("2_72lqo")
+texture = ExtResource("2_327k3")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_v1ro8")
