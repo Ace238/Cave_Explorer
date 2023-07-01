@@ -28,12 +28,10 @@ func move(delta):
 	axis = get_input_axis()
 	
 	if axis == Vector2.ZERO:
-#		apply_friction(FRICTION * delta)
-		pass
+		apply_friction(FRICTION * delta)
 		
 	else:
 		apply_movement(axis * ACCELERATION * delta)
-#		pass
 		
 	move_and_slide()
 
