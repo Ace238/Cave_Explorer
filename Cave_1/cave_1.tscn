@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://c0k0l4trlrcgj"]
+
+[ext_resource type="Script" path="res://Cave_1/cave_1.gd" id="1_ryxfw"]
+[ext_resource type="PackedScene" uid="uid://c1cb6fwgcfc4w" path="res://TileMap/tilemap.tscn" id="2_ogwhr"]
+[ext_resource type="PackedScene" uid="uid://bcudx3f63hadc" path="res://Player/temp_player.tscn" id="3_63kio"]
+[ext_resource type="PackedScene" uid="uid://de5t6lu8f2lwp" path="res://Interact/Interact.tscn" id="4_ngqop"]
+
+[node name="Cave_1" type="Node2D"]
+script = ExtResource("1_ryxfw")
+
+[node name="TileMap" parent="." instance=ExtResource("2_ogwhr")]
+
+[node name="Temp_Player" parent="." instance=ExtResource("3_63kio")]
+position = Vector2(510, 519)
+
+[node name="Interacter" parent="." instance=ExtResource("4_ngqop")]
+position = Vector2(853, 514)
+scale = Vector2(0.465, 0.465)
+interact_label = "Press E to mine"
