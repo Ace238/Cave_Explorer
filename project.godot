@@ -15,6 +15,12 @@ run/main_scene="res://Cave_1/cave_1.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=1024
+window/size/viewport_height=600
+window/stretch/mode="viewport"
+
 [input]
 
 Interact={
@@ -56,3 +62,7 @@ click_left={
 [layer_names]
 
 2d_physics/layer_2="Interactions"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
