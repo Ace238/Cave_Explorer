@@ -3,9 +3,9 @@ extends Node2D
 var counter = 10
 @onready var health = $wall_health
 
-
 func _unhandled_input(event):
-	if event is InputEventMouseButton and event.is_pressed():
+	#if event is InputEventMouseButton and event.is_pressed():
+	if Input.is_action_just_pressed("click_left"):
 #		var pos = event.position
 #		print(pos)
 		
@@ -29,19 +29,21 @@ func _unhandled_input(event):
 				print(counter)
 				health.text = str(counter)
 				
-			else:
-				print("Wall collapsed.")
-				health.text = "Wall collapsed."
+				clicked_cell_depth = clicked_cell_data.get_custom_data("depth")
+	#			print(clicked_cell_depth)
+				clicked_cell_depth = max(0, clicked_cell_depth - 1)
+				
+				tile_map.set_cell(0, clicked_cell_position, 0, Vector2i(clicked_cell_depth, 0), 0)	
+				
+				if clicked_cell_depth == 0:
+					tile_map.set_cell(0, clicked_cell_position)	
 			
-			clicked_cell_depth = clicked_cell_data.get_custom_data("depth")
-#			print(clicked_cell_depth)
-			clicked_cell_depth = max(0, clicked_cell_depth - 1)
-			
-			tile_map.set_cell(0, clicked_cell_position, 0, Vector2i(clicked_cell_depth, 0), 0)	
-			
-			if clicked_cell_depth == 0:
-				tile_map.set_cell(0, clicked_cell_position)	
-			
+				if counter == 0:
+					print("Wall collapsed.")
+					health.text = "Wall collapsed."
+					
+					get_tree().change_scene_to_file("res://Cave_1/cave_1.tscn")
+
 		else:
 			return 0
 		

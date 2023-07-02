@@ -16,25 +16,6 @@ func _ready():
 
 
 func _input(event):
-	if Input.is_action_just_pressed("click"):
-		
-		var mouse_pos : Vector2 = get_global_mouse_position()
-		var tile_mouse_pos : Vector2i = tile_map.local_to_map(mouse_pos)
-#		var sourceID : int = 2
-#		var atlas : Vector2i = Vector2i(0,0)
-		var tiledata : TileData = tile_map.get_cell_tile_data(foreground_layer, tile_mouse_pos)
-		
-		if tiledata:
-			var can_be_mined = tiledata.get_custom_data(can_be_mined_custom_layer)
-			if can_be_mined:
-				tile_map.set_cell(foreground_layer, tile_mouse_pos, sourceID, atlas)
-			else:
-				print("Cannot be mined")
-		else:
-			print("No tile data")
-		
-		
-
 	if Input.is_action_just_pressed("Interact"):
 		var global_char_pos : Vector2 = temp_player.global_position
 		var tile_char_pos : Vector2i = tile_map.local_to_map(global_char_pos)
@@ -61,6 +42,7 @@ func _input(event):
 					mined = 1
 					print("Yay, you mined something!!!!")
 					#get_tree().change_scene_to_file("res://Test_Scene/Test_Scene.tscn")
+					get_tree().change_scene_to_file("res://Excavation Game/excavation_game.tscn")
 					return
 				else:
 					if mined == 1:
