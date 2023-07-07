@@ -13,7 +13,7 @@ outline_color = Color(0, 0, 0, 1)
 position = Vector2(512, 300)
 script = ExtResource("1_rh2vo")
 
-[node name="wall_health" type="Label" parent="."]
+[node name="Wall_Stability" type="Label" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -30,7 +30,7 @@ label_settings = SubResource("LabelSettings_vku2x")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="my_map" type="TileMap" parent="."]
+[node name="Wall_Tile_Map" type="TileMap" parent="."]
 scale = Vector2(1.2, 1.2)
 tile_set = ExtResource("2_pswh3")
 format = 2
@@ -51,6 +51,6 @@ layer_2/y_sort_origin = 0
 layer_2/z_index = -2
 layer_2/tile_data = PackedInt32Array(-131075, 0, 0, -65539, 0, 0, -3, 0, 0, 65533, 0, 0, 131069, 0, 0, 196605, 0, 0, -131074, 0, 0, -65538, 0, 0, -2, 0, 0, 65534, 0, 0, 131070, 0, 0, 196606, 0, 0, -131073, 0, 0, -65537, 0, 0, -1, 0, 0, 65535, 0, 0, 131071, 0, 0, 196607, 0, 0, -196608, 0, 0, -131072, 0, 0, -65536, 0, 0, 0, 0, 0, 65536, 0, 0, 131072, 0, 0, -196607, 0, 0, -131071, 0, 0, -65535, 0, 0, 1, 0, 0, 65537, 0, 0, 131073, 0, 0, -196606, 0, 0, -131070, 0, 0, -65534, 0, 0, 2, 0, 0, 65538, 0, 0, 131074, 0, 0)
 
-[node name="RedDuskBackground" type="Sprite2D" parent="."]
+[node name="Background" type="Sprite2D" parent="."]
 z_index = -3
 texture = ExtResource("3_voerb")
