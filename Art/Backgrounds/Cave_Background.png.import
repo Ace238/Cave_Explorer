@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bex6cgfwm11wb"
-path="res://.godot/imported/red_dusk_background.png-8b420b7d705844baa99c03800b8cbcd2.ctex"
+uid="uid://o8xrxaw41wgc"
+path="res://.godot/imported/Cave_Background.png-d52162bf0c2dabcd58836b29a6e3fd1a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Art/Backgrounds/red_dusk_background.png"
-dest_files=["res://.godot/imported/red_dusk_background.png-8b420b7d705844baa99c03800b8cbcd2.ctex"]
+source_file="res://Art/Backgrounds/Cave_Background.png"
+dest_files=["res://.godot/imported/Cave_Background.png-d52162bf0c2dabcd58836b29a6e3fd1a.ctex"]
 
 [params]
 

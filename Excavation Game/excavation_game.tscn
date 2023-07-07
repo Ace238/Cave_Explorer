@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Excavation Game/excavation_game.gd" id="1_rh2vo"]
 [ext_resource type="TileSet" uid="uid://bd2ugbifvlo03" path="res://Art/Excavation_Game_Art/Tile_Sets/cell_tile_set.tres" id="2_pswh3"]
-[ext_resource type="Texture2D" uid="uid://bex6cgfwm11wb" path="res://Art/Backgrounds/red_dusk_background.png" id="3_voerb"]
+[ext_resource type="Texture2D" uid="uid://o8xrxaw41wgc" path="res://Art/Backgrounds/Cave_Background.png" id="3_afnil"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_vku2x"]
 font_size = 29
@@ -27,7 +27,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 6
 size_flags_vertical = 2
-text = "TEST"
+text = "Wall"
 label_settings = SubResource("LabelSettings_vku2x")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -46,7 +46,7 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 6
 size_flags_vertical = 2
-text = "TEST"
+text = "Gem"
 label_settings = SubResource("LabelSettings_vku2x")
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -72,6 +72,6 @@ layer_2/y_sort_origin = 0
 layer_2/z_index = -2
 layer_2/tile_data = PackedInt32Array(-131075, 0, 0, -65539, 0, 0, -3, 0, 0, 65533, 0, 0, 131069, 0, 0, 196605, 0, 0, -131074, 0, 0, -65538, 0, 0, -2, 0, 0, 65534, 0, 0, 131070, 0, 0, 196606, 0, 0, -131073, 0, 0, -65537, 0, 0, -1, 0, 0, 65535, 0, 0, 131071, 0, 0, 196607, 0, 0, -196608, 0, 0, -131072, 0, 0, -65536, 0, 0, 0, 0, 0, 65536, 0, 0, 131072, 0, 0, -196607, 0, 0, -131071, 0, 0, -65535, 0, 0, 1, 0, 0, 65537, 0, 0, 131073, 0, 0, -196606, 0, 0, -131070, 0, 0, -65534, 0, 0, 2, 0, 0, 65538, 0, 0, 131074, 0, 0)
 
-[node name="Background" type="Sprite2D" parent="."]
+[node name="CaveBackground" type="Sprite2D" parent="."]
 z_index = -3
-texture = ExtResource("3_voerb")
+texture = ExtResource("3_afnil")
