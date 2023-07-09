@@ -7,10 +7,14 @@ extends Node2D
 var stability_count = 10
 var gem_count = 0
 
+
 func _ready():
-	# Initialize labels
+	# Initialize labels.
 	stability.text = str("Stability: ", stability_count)
 	gem_count_label.text = str("Gem Count: ", gem_count)
+	
+	print("Before: ",Inventory.Total_Gems)
+	
 
 func _unhandled_input(event):
 	# Check for left mouse click.
@@ -41,16 +45,19 @@ func _unhandled_input(event):
 					# Check if gem found on layer 1
 					var gem_found = tile_map.get_cell_tile_data(1, clicked_cell_position)
 					if gem_found:
-						# Increment gem count and update label.
+						# Increment gem count and update label. (Local)
 						gem_count = gem_count + 1
 						gem_count_label.text = str("Gem Count: ", gem_count)
-						print(gem_count)
+#						print(gem_count)
+						
+						# Increment Total Gems (Global)
+						Inventory.Total_Gems += 1
+						print("Update: ", Inventory.Total_Gems)
 				
 				# When wall is not stable, switch to cave scene.
 				if stability_count == 0:
 					print("Wall collapsed.")
 					stability.text = "Wall collapsed."
-					
 					
 					# TODO: Add some delay or inbetween state.
 					get_tree().change_scene_to_file("res://Cave_1/cave_1.tscn")

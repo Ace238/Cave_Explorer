@@ -15,6 +15,10 @@ run/main_scene="res://Cave_1/cave_1.tscn"
 config/features=PackedStringArray("4.0", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Inventory="*res://Auto Load/inventory.gd"
+
 [display]
 
 window/size/viewport_width=1024

@@ -12,6 +12,8 @@ var foreground_layer : int = 1
 var can_be_mined_custom_layer : String = "Can_be_mined"
 
 func _ready():
+	# Number of gems is shared between scenes using singleton "Inventory.Total_Gems".
+	# print("From Cave: ", Inventory.Total_Gems)
 	pass
 
 
